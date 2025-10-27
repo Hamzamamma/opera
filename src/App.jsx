@@ -1,4 +1,5 @@
 import Hero from './components/Hero';
+import CustomizableShops from './components/CustomizableShops';
 import MembershipSection from './components/MembershipSection';
 import Testimonial from './components/Testimonial';
 import FAQ from './components/FAQ';
@@ -11,6 +12,7 @@ function App() {
   return (
     <div className="app">
       <Hero />
+      <CustomizableShops />
       <CustomProducts />
       <FeaturesSection />
       <YouTubeSteps />
