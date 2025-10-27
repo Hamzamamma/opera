@@ -6,40 +6,40 @@ const FAQ = () => {
 
   const faqs = [
     {
-      question: "هل يتقاضى Fourthwall رسومًا لإنشاء موقع ويب وكتالوج منتجات؟",
-      answer: "لا! Fourthwall مجاني تمامًا. لا توجد تكاليف شهرية أو رسوم إعداد أو تكاليف مخفية. أنت تدفع فقط عندما تقوم بالبيع."
+      question: "Fourthwall mi addebita qualcosa per creare un sito web e il catalogo prodotti?",
+      answer: "No! Fourthwall è completamente gratuito. Non ci sono costi mensili, spese di configurazione o costi nascosti. Paghi solo quando effettui una vendita."
     },
     {
-      question: "كم سأربح مع Fourthwall؟",
-      answer: "تعتمد أرباحك على حجم جمهورك ومستوى تفاعلهم وأسعار المنتجات. يرى معظم منشئي المحتوى إيرادات كبيرة في الأشهر الأولى."
+      question: "Quanto guadagnerò con Fourthwall?",
+      answer: "I tuoi guadagni dipendono dalla dimensione del tuo pubblico, dal coinvolgimento e dai prezzi dei prodotti. La maggior parte dei creator vede entrate significative nei primi mesi."
     },
     {
-      question: "هل يتعامل Fourthwall مع المدفوعات والفواتير؟",
-      answer: "نعم! نتعامل مع جميع معالجة المدفوعات والفواتير والوثائق الضريبية. أنت تركز على الإنشاء، ونحن نتعامل مع الباقي."
+      question: "Fourthwall gestisce pagamenti e fatturazione?",
+      answer: "Sì! Gestiamo tutta l'elaborazione dei pagamenti, la fatturazione e la documentazione fiscale. Tu ti concentri sulla creazione, noi gestiamo il resto."
     },
     {
-      question: "كيف يتعامل Fourthwall مع الإنتاج؟",
-      answer: "لدينا شبكة عالمية من المصنعين الذين ينتجون المنتجات عند الطلب. هذا يعني عدم وجود تكاليف مقدمة أو إدارة مخزون بالنسبة لك."
+      question: "Come gestisce Fourthwall la produzione?",
+      answer: "Abbiamo una rete globale di produttori che realizzano articoli su richiesta. Questo significa nessun costo anticipato o gestione dell'inventario per te."
     },
     {
-      question: "هل يمكنني تخصيص المنتجات بتصميماتي الخاصة؟",
-      answer: "بالتأكيد! تسمح لك أدوات التصميم الخاصة بنا بإنشاء منتجات مخصصة بعلامتك التجارية وأعمالك الفنية وتصميماتك الفريدة. لديك سيطرة إبداعية كاملة."
+      question: "Posso personalizzare i prodotti con i miei design?",
+      answer: "Assolutamente! I nostri strumenti di design ti permettono di creare prodotti personalizzati con il tuo marchio, le tue opere d'arte e design unici. Hai il controllo creativo completo."
     },
     {
-      question: "هل يتعامل Fourthwall مع الشحن وخدمة العملاء؟",
-      answer: "نعم! نتعامل مع جميع لوجستيات الشحن ونوفر خدمة عملاء مخصصة للمشترين، حتى تتمكن من التركيز على إنشاء المحتوى."
+      question: "Fourthwall si occupa della spedizione e del servizio clienti?",
+      answer: "Sì! Gestiamo tutta la logistica di spedizione e forniamo un servizio clienti dedicato per i tuoi acquirenti, così puoi concentrarti sulla creazione di contenuti."
     },
     {
-      question: "هل يمكنني استخدام بيانات متجري لفهم معجبي بشكل أفضل؟",
-      answer: "نعم! تحصل على تحليلات مفصلة حول مبيعاتك والبيانات الديموغرافية للعملاء وأداء المنتجات لمساعدتك في اتخاذ قرارات مستنيرة."
+      question: "Posso utilizzare i dati del mio negozio per comprendere meglio i miei fan?",
+      answer: "Sì! Ottieni analisi dettagliate sulle tue vendite, dati demografici dei clienti e performance dei prodotti per aiutarti a prendere decisioni informate."
     },
     {
-      question: "كيف أبدأ في بيع منتجاتي وإعداد Fourthwall الخاص بي؟",
-      answer: "البدء سهل! سجل مجانًا، وخصص متجرك، وأضف المنتجات، وستكون جاهزًا للبدء في البيع. تستغرق العملية بأكملها أقل من 30 دقيقة."
+      question: "Come faccio a iniziare a vendere il mio merchandise e configurare il mio Fourthwall?",
+      answer: "Iniziare è facile! Registrati gratuitamente, personalizza il tuo negozio, aggiungi prodotti e sei pronto per iniziare a vendere. L'intero processo richiede meno di 30 minuti."
     },
     {
-      question: "هل هناك متطلبات لاستخدام Fourthwall؟",
-      answer: "لا توجد متطلبات محددة! سواء كان لديك 100 أو مليون متابع، فإن Fourthwall مصمم لمساعدة منشئي المحتوى من جميع الأحجام على النجاح."
+      question: "Ci sono requisiti per utilizzare Fourthwall?",
+      answer: "Nessun requisito specifico! Che tu abbia 100 o 1 milione di follower, Fourthwall è progettato per aiutare i creator di tutte le dimensioni ad avere successo."
     }
   ];
 
@@ -50,7 +50,7 @@ const FAQ = () => {
   return (
     <section className="faq-section">
       <div className="faq-container">
-        <h2 className="faq-title">الأسئلة الشائعة</h2>
+        <h2 className="faq-title">Domande frequenti</h2>
 
         {faqs.map((faq, index) => (
           <div
@@ -67,7 +67,7 @@ const FAQ = () => {
           </div>
         ))}
 
-        <a href="#" className="get-started-btn">ابدأ الآن ←</a>
+        <a href="#" className="get-started-btn">Inizia ora →</a>
       </div>
     </section>
   );

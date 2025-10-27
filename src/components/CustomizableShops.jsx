@@ -175,11 +175,11 @@ const CustomizableShops = () => {
       <div className="container">
         <div className="templates-header">
           <h2 className="templates-title">
-            متاجر قابلة للتخصيص بالكامل،<br />
-            مملوكة لك بنسبة 100٪
+            Fully-customizable shops,<br />
+            100% owned by you
           </h2>
           <p className="templates-subtitle">
-            قم بتخصيص التصميم والتخطيط والنطاق الخاص بك بسهولة لإنشاء علامة تجارية فريدة مثلك تمامًا.
+            Easily customize your design, layout, and domain to create a brand that's as unique as you are.
           </p>
         </div>
       </div>
