@@ -1,0 +1,122 @@
+.faq-section {
+  padding: 80px 40px;
+  background: white;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-title {
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 48px;
+  letter-spacing: -1px;
+}
+
+.faq-item {
+  border: 1px solid #E0E0E0;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+  padding: 20px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background: white;
+  transition: background 0.3s ease;
+}
+
+.faq-question:hover {
+  background: #F8F8F8;
+}
+
+.faq-text {
+  font-size: 16px;
+  font-weight: 500;
+  flex: 1;
+}
+
+.faq-toggle {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.faq-toggle::before,
+.faq-toggle::after {
+  content: '';
+  position: absolute;
+  background: #666;
+  transition: all 0.3s ease;
+}
+
+.faq-toggle::before {
+  width: 14px;
+  height: 2px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.faq-toggle::after {
+  width: 2px;
+  height: 14px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.faq-item.active .faq-toggle {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 24px;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 200px;
+  padding: 0 24px 20px;
+}
+
+.faq-answer-text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #666;
+}
+
+.get-started-btn {
+  display: block;
+  width: 200px;
+  margin: 48px auto 0;
+  padding: 14px 32px;
+  background: #000;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.get-started-btn:hover {
+  background: #333;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}

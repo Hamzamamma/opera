@@ -1,0 +1,83 @@
+.membership-section {
+  background: linear-gradient(135deg, #C91E5A 0%, #D6295F 100%);
+  padding: 80px 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.membership-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.membership-text {
+  flex: 1;
+  color: white;
+}
+
+.membership-title {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 24px;
+  letter-spacing: -1px;
+}
+
+.membership-description {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 32px;
+  opacity: 0.9;
+}
+
+.membership-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-primary {
+  background: white;
+  color: #C91E5A;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.btn-secondary:hover {
+  background: white;
+  color: #C91E5A;
+}
+
+.membership-preview {
+  flex: 0 0 450px;
+  height: 350px;
+  background: #1A1A1A;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
