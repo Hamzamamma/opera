@@ -11,51 +11,51 @@ const FeaturesSection = () => {
   const platforms = [
     {
       name: 'Instagram Shop',
-      desc: 'Vendi i tuoi prodotti direttamente ai tuoi fan su Instagram',
+      desc: 'بيع منتجاتك مباشرة لمعجبيك على Instagram',
       icon: '📷',
       gradient: 'linear-gradient(135deg, #F58529, #DD2A7B, #8134AF)'
     },
     {
       name: 'StreamElements',
-      desc: 'Mostra stream e acquisti tramite alert',
+      desc: 'عرض البث والمشتريات عبر التنبيهات',
       icon: 'S',
       gradient: 'linear-gradient(135deg, #00C9FF, #92FE9D)',
       textColor: '#000'
     },
     {
       name: 'YouTube Product Shelf',
-      desc: 'Promuovi prodotti dal tuo negozio sul tuo canale YouTube',
+      desc: 'روّج للمنتجات من متجرك على قناتك على YouTube',
       icon: '▶',
       gradient: '#FF0000'
     },
     {
       name: 'Spotify',
-      desc: 'Merch per artisti',
+      desc: 'منتجات للفنانين',
       icon: '🎵',
       gradient: '#1DB954'
     },
     {
       name: 'Twitch Product Gifting',
-      desc: 'Consenti agli spettatori di regalare prodotti',
+      desc: 'اسمح للمشاهدين بإهداء المنتجات',
       icon: '📺',
       gradient: '#9146FF'
     },
     {
       name: 'X (Twitter)',
-      desc: 'Link shop in bio',
+      desc: 'رابط المتجر في السيرة الذاتية',
       icon: '𝕏',
       gradient: '#1DA1F2'
     },
     {
       name: 'TikTok Shop',
-      desc: 'Vendi prodotti dal tuo negozio direttamente ai tuoi fan su TikTok',
+      desc: 'بيع المنتجات من متجرك مباشرة لمعجبيك على TikTok',
       icon: '♪',
       gradient: '#000',
       border: '2px solid #FF0050'
     },
     {
       name: 'Discord',
-      desc: 'Drop esclusivi per membri',
+      desc: 'إصدارات حصرية للأعضاء',
       icon: '💬',
       gradient: '#5865F2'
     }
@@ -71,62 +71,57 @@ const FeaturesSection = () => {
     <section className="features-section">
       {/* Section Header */}
       <div className="section-header">
-        <h2 className="section-title-main">Rendiamo l'ecommerce facile,</h2>
-        <p className="section-subtitle-main">nessuna esperienza necessaria</p>
+        <h2 className="section-title-main">نجعل التجارة الإلكترونية سهلة،</h2>
+        <p className="section-subtitle-main">لا حاجة لخبرة</p>
       </div>
 
       {/* Features Grid */}
       <div className="features-grid">
         {/* Feature 1: Easy Management Tools */}
         <div className="feature-card">
-          <h3 className="feature-title">Strumenti di gestione semplici</h3>
+          <h3 className="feature-title">أدوات إدارة بسيطة</h3>
           <p className="feature-description">
-            Traccia i tuoi ordini, gestisci i prodotti e monitora le vendite in tempo reale con una
-            dashboard intelligente e intuitiva che mantiene tutto chiaro, sia su desktop che su app.
+            تتبع طلباتك، وأدر منتجاتك، وراقب المبيعات في الوقت الفعلي من خلال لوحة تحكم ذكية وبديهية تحافظ على كل شيء واضحًا، سواء على سطح المكتب أو التطبيق.
           </p>
 
           <div className="dashboard-image-container">
-            <img src={dashboardImg} alt="Dashboard Preview" className="dashboard-image" />
+            <img src={dashboardImg} alt="معاينة لوحة التحكم" className="dashboard-image" />
           </div>
         </div>
 
         {/* Feature 2: Global Manufacturing */}
         <div className="feature-card">
-          <h3 className="feature-title">Produzione globale, consegna locale</h3>
+          <h3 className="feature-title">إنتاج عالمي، تسليم محلي</h3>
           <p className="feature-description">
-            La nostra rete di produzione mondiale garantisce che i tuoi prodotti siano realizzati e
-            spediti da luoghi vicini ai tuoi clienti, riducendo significativamente i tempi e i costi di consegna.
+            تضمن شبكة الإنتاج العالمية لدينا أن يتم تصنيع منتجاتك وشحنها من أماكن قريبة من عملائك، مما يقلل بشكل كبير من أوقات التسليم والتكاليف.
           </p>
 
           <div className="world-map">
-            <img src={globalMapImg} alt="Global Manufacturing Map" className="map-image" />
+            <img src={globalMapImg} alt="خريطة الإنتاج العالمي" className="map-image" />
           </div>
         </div>
 
         {/* Feature 3: Design Tool */}
         <div className="feature-card">
-          <h3 className="feature-title">Progetta il prodotto perfetto</h3>
+          <h3 className="feature-title">صمم المنتج المثالي</h3>
           <p className="feature-description">
-            Vai oltre la personalizzazione di base. Il nostro designer di prodotti ti aiuta a creare
-            pezzi davvero unici con strumenti integrati, supporto di artisti professionisti e rendering iper-realistici.
+            تجاوز التخصيص الأساسي. يساعدك مصمم المنتجات لدينا على إنشاء قطع فريدة حقًا مع أدوات متكاملة ودعم فنانين محترفين وعروض فائقة الواقعية.
           </p>
 
           <div className="hoodie-image-container">
-            <img src={hoodieImg} alt="Product Design Tool" className="hoodie-image" />
+            <img src={hoodieImg} alt="أداة تصميم المنتج" className="hoodie-image" />
           </div>
         </div>
 
         {/* Feature 4: Platform Integrations */}
         <div className="feature-card">
-          <h3 className="feature-title">Vendi e coinvolgi su ogni piattaforma</h3>
+          <h3 className="feature-title">البيع والتفاعل على كل منصة</h3>
           <p className="feature-description">
-            Siamo integrati con YouTube, Instagram, TikTok, Twitch, Spotify e altre
-            piattaforme per aiutarti a vendere prodotti, premiare i fan e far crescere il tuo brand
-            ovunque crei contenuti.
+            نحن متكاملون مع YouTube وInstagram وTikTok وTwitch وSpotify ومنصات أخرى لمساعدتك في بيع المنتجات ومكافأة المعجبين وتنمية علامتك التجارية أينما تنشئ المحتوى.
           </p>
 
           <div className="platforms-image-container">
-            <img src={platformsImg} alt="Platform Integrations" className="platforms-image" />
+            <img src={platformsImg} alt="تكاملات المنصات" className="platforms-image" />
           </div>
         </div>
       </div>

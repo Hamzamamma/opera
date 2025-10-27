@@ -18,7 +18,7 @@ const Testimonial = () => {
 
   const testimonials = [
     {
-      quote: "Lavorare con Fourthwall è un'esperienza fantastica. Gestiscono logistica, produzione e, cosa più importante, la qualità del servizio clienti. Posso concentrarmi su ciò che conta: lo consiglierei a tutti i creator.",
+      quote: "العمل مع Fourthwall تجربة رائعة. يتعاملون مع اللوجستيات والإنتاج، والأهم من ذلك، جودة خدمة العملاء. يمكنني التركيز على ما يهم: أوصي به لجميع منشئي المحتوى.",
       author: "MKBHD",
       link: "mkbhd.com",
       storeUrl: "https://mkbhd.com",
@@ -26,16 +26,16 @@ const Testimonial = () => {
       overlayImage: mkbhdProfile
     },
     {
-      quote: "Grazie per aver reso così facile il lancio di un negozio. Non riesco a sottolineare abbastanza quanto fenomenale sia stato questo processo, o quanto tempo Fourthwall ci ha fatto risparmiare. Sono un grande fan.",
+      quote: "شكرًا لجعل إطلاق متجر أمرًا سهلاً للغاية. لا يمكنني التأكيد بما فيه الكفاية على مدى روعة هذه العملية، أو مقدار الوقت الذي وفره لنا Fourthwall. أنا معجب كبير.",
       author: "Shannon Magiera",
-      role: "Head of VIP and Onboarding Operations",
+      role: "رئيس عمليات كبار الشخصيات والإعداد",
       link: "shop.kalshi.com",
       storeUrl: "https://shop.kalshi.com",
       shopImage: kalshiShop,
       overlayImage: kalshiLogo
     },
     {
-      quote: "Fourthwall mi ha stupito. Non solo stavo vendendo di più, ma i miei fan erano molto più felici. Era un prodotto di qualità superiore su un sito dall'aspetto migliore e molto più facile da gestire. Non vedo l'ora di lanciare le mie membership.",
+      quote: "أذهلني Fourthwall. لم أكن أبيع أكثر فحسب، بل كان معجبي أكثر سعادة بكثير. كان منتجًا عالي الجودة على موقع يبدو أفضل وأسهل بكثير في الإدارة. أتطلع إلى إطلاق عضوياتي.",
       author: "Phil DeFranco",
       link: "beautifulbastard.com",
       storeUrl: "https://beautifulbastard.com",
@@ -43,7 +43,7 @@ const Testimonial = () => {
       overlayImage: philProfile
     },
     {
-      quote: "Su Patreon, avevamo funzionalità che ci hanno permesso di crescere, ma Fourthwall le ha ampliate. Siamo stati molto felici di fare il salto. Ora abbiamo un sito semplice e facile da usare che ci permette di connetterci direttamente con i membri.",
+      quote: "على Patreon، كانت لدينا ميزات سمحت لنا بالنمو، لكن Fourthwall وسّعها. كنا سعداء جدًا بالقفز. لدينا الآن موقع بسيط وسهل الاستخدام يتيح لنا الاتصال مباشرة بالأعضاء.",
       author: "I Could Murder A Podcast",
       link: "icmap.co.uk",
       storeUrl: "https://icmap.co.uk",
@@ -51,7 +51,7 @@ const Testimonial = () => {
       overlayImage: icmapProfile
     },
     {
-      quote: "Sono rimasto sbalordito dalla reazione dei miei fan al mio nuovo sito e negozio. È stato un cambiamento radicale. Il reddito aggiuntivo mi ha anche permesso di espandere il mio team e produrre contenuti migliori per i miei fan.",
+      quote: "لقد أذهلني رد فعل معجبي على موقعي ومتجري الجديد. كان تحولًا جذريًا. سمح لي الدخل الإضافي أيضًا بتوسيع فريقي وإنتاج محتوى أفضل لمعجبي.",
       author: "Harry Mack",
       link: "shop.harrymackofficial.com",
       storeUrl: "https://shop.harrymackofficial.com",
@@ -59,7 +59,7 @@ const Testimonial = () => {
       overlayImage: harryProfile
     },
     {
-      quote: "Lavoro con Fourthwall da anni e sono sempre stati molto disponibili e divertenti con cui collaborare. Adoro anche la loro app! Mi permette di inviare video di ringraziamento a tutti coloro che acquistano il mio merchandising.",
+      quote: "أعمل مع Fourthwall منذ سنوات وكانوا دائمًا متعاونين للغاية وممتعين في العمل معهم. أحب تطبيقهم أيضًا! يسمح لي بإرسال مقاطع فيديو شكر لكل من يشتري منتجاتي.",
       author: "Charlotte Dobre",
       link: "shop.charlottedobre.net",
       storeUrl: "https://shop.charlottedobre.net",

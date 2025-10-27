@@ -6,17 +6,15 @@ const MembershipSection = () => {
       <div className="membership-content">
         <div className="membership-text">
           <h2 className="membership-title">
-            Offri abbonamenti<br />
-            mensili
+            قدّم اشتراكات<br />
+            شهرية
           </h2>
           <p className="membership-description">
-            Offri vantaggi esclusivi, contenuti riservati, stream solo per abbonati,
-            accesso VIP su Discord ai membri. Tutti gli strumenti integrati perfettamente
-            ti permettono di tracciare, coinvolgere e premiare i tuoi sostenitori.
+            قدّم امتيازات حصرية، ومحتوى مخصص، وبث مباشر للمشتركين فقط، ووصول VIP على Discord للأعضاء. جميع الأدوات المتكاملة بشكل مثالي تتيح لك تتبع ومشاركة ومكافأة داعميك.
           </p>
           <div className="membership-buttons">
-            <a href="#" className="btn btn-primary">Inizia ora</a>
-            <a href="#" className="btn btn-secondary">Esplora strumenti abbonamenti</a>
+            <a href="#" className="btn btn-primary">ابدأ الآن</a>
+            <a href="#" className="btn btn-secondary">استكشف أدوات الاشتراكات</a>
           </div>
         </div>
         <div className="membership-preview">

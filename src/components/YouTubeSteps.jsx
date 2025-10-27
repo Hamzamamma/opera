@@ -7,48 +7,48 @@ const YouTubeSteps = () => {
   return (
     <section className="youtube-steps-section">
       <div className="youtube-container">
-        <h1 className="youtube-title">Vendi su YouTube in tre semplici passaggi</h1>
+        <h1 className="youtube-title">البيع على YouTube في ثلاث خطوات بسيطة</h1>
 
         <div className="youtube-grid">
           {/* Card 1: Crea il tuo negozio */}
           <article className="youtube-card">
             <div className="youtube-card-visual">
-              <img src={shopImage} alt="Crea il tuo negozio" className="card-main-image" />
+              <img src={shopImage} alt="أنشئ متجرك" className="card-main-image" />
             </div>
             <div className="youtube-card-content">
-              <h2 className="youtube-card-title">1. CREA IL TUO NEGOZIO</h2>
+              <h2 className="youtube-card-title">1. أنشئ متجرك</h2>
               <p className="youtube-card-desc">
-                Fourthwall ti permette di creare un negozio, senza bisogno di codice. Usa strumenti drag and drop per costruire un sito che sia unicamente tuo. Trova il prodotto giusto per i tuoi fan e carica il tuo design.
+                يتيح لك Fourthwall إنشاء متجر بدون الحاجة إلى كود. استخدم أدوات السحب والإفلات لبناء موقع فريد خاص بك. اعثر على المنتج المناسب لمعجبيك وارفع تصميمك.
               </p>
-              <a href="#" className="youtube-card-link">Inizia ora →</a>
+              <a href="#" className="youtube-card-link">ابدأ الآن ←</a>
             </div>
           </article>
 
           {/* Card 2: Collega gli account */}
           <article className="youtube-card">
             <div className="youtube-card-visual">
-              <img src={connectImage} alt="Collega gli account" className="card-main-image" />
+              <img src={connectImage} alt="ربط الحسابات" className="card-main-image" />
             </div>
             <div className="youtube-card-content">
-              <h2 className="youtube-card-title">2. COLLEGA GLI ACCOUNT</h2>
+              <h2 className="youtube-card-title">2. ربط الحسابات</h2>
               <p className="youtube-card-desc">
-                Collega il tuo negozio Fourthwall al tuo account YouTube. Puoi farlo navigando nella tua dashboard e trovando YouTube sotto "App". Segui la nostra guida per le istruzioni complete.
+                اربط متجر Fourthwall الخاص بك بحساب YouTube الخاص بك. يمكنك القيام بذلك من خلال الانتقال إلى لوحة التحكم والعثور على YouTube ضمن "التطبيقات". اتبع دليلنا للحصول على تعليمات كاملة.
               </p>
-              <a href="#" className="youtube-card-link">Collegati →</a>
+              <a href="#" className="youtube-card-link">اتصل ←</a>
             </div>
           </article>
 
           {/* Card 3: Promuovi il tuo negozio */}
           <article className="youtube-card">
             <div className="youtube-card-visual">
-              <img src={promoteImage} alt="Promuovi il tuo negozio" className="card-main-image" />
+              <img src={promoteImage} alt="روّج لمتجرك" className="card-main-image" />
             </div>
             <div className="youtube-card-content">
-              <h2 className="youtube-card-title">3. PROMUOVI IL TUO NEGOZIO</h2>
+              <h2 className="youtube-card-title">3. روّج لمتجرك</h2>
               <p className="youtube-card-desc">
-                Infine, promuovi il tuo nuovo negozio e i prodotti personalizzati sui tuoi social. Annuncia il tuo sito nei tuoi video, facendo sapere alle persone che possono fare shopping mentre guardano i tuoi contenuti.
+                أخيرًا، روّج لمتجرك الجديد ومنتجاتك المخصصة على وسائل التواصل الاجتماعي الخاصة بك. أعلن عن موقعك في مقاطع الفيديو الخاصة بك، وأخبر الأشخاص أنه يمكنهم التسوق أثناء مشاهدة محتواك.
               </p>
-              <a href="#" className="youtube-card-link">Scopri di più →</a>
+              <a href="#" className="youtube-card-link">اعرف المزيد ←</a>
             </div>
           </article>
         </div>
