@@ -84,43 +84,43 @@ const CustomizableShops = () => {
       {
         name: 'Will Neff',
         url: 'https://neffsauce.com/en-eur',
-        image: 'https://fourthwall.com/webflow-cdn/63ff7c6ecc83f97ec5fe9155/65eafb12612ddc6cd5b3f5c1_willneff.webp',
+        image: '/images/shops/65eafb12612ddc6cd5b3f5c1_willneff.webp',
         alt: 'Will Neff - Neff Sauce Store'
       },
       {
         name: 'Makayla',
         url: 'https://shopthelastresort.com/en-eur',
-        image: 'https://fourthwall.com/webflow-cdn/63ff7c6ecc83f97ec5fe9155/67154862e2dc3db4e6c04deb_makayla.webp',
+        image: '/images/shops/65eaf04f95f2a5768d36130c_warislame.webp',
         alt: 'Makayla - The Last Resort Shop'
       },
       {
         name: 'CleanBois',
         url: 'https://cleanbois.com/',
-        image: 'https://fourthwall.com/webflow-cdn/63ff7c6ecc83f97ec5fe9155/6711d51a5d45d0c8ca64eb7a_cleanbois.webp',
+        image: '/images/shops/65eb22d251469d9a787f236b_cleanbois.webp',
         alt: 'CleanBois Store'
       },
       {
         name: 'TenToesDown',
         url: 'https://tentoesdown.com/en-eur',
-        image: 'https://fourthwall.com/webflow-cdn/63ff7c6ecc83f97ec5fe9155/66fe55754e0385fa73eb0f13_tentoesdown.webp',
+        image: '/images/shops/65eaf04f94118d61f57be63d_tentoesdown.webp',
         alt: 'TenToesDown Store'
       },
       {
         name: 'OnlyFins',
         url: 'https://onlyfins.com/',
-        image: 'https://fourthwall.com/webflow-cdn/63ff7c6ecc83f97ec5fe9155/6711e0fb1b7cb6c30a6d6f49_onlyfins.webp',
+        image: '/images/shops/65eaf04db996a3f3d127b59b_onlyfins.webp',
         alt: 'OnlyFins Store'
       },
       {
         name: 'Armchair History',
         url: 'https://armchairhistory.com/en-eur',
-        image: 'https://fourthwall.com/webflow-cdn/63ff7c6ecc83f97ec5fe9155/6711eaf98a8fed1b1c1fe6a6_armchairhistory.webp',
+        image: '/images/shops/65e8c1afa94e9b4eb85be059_armchair.webp',
         alt: 'Armchair History Store'
       },
       {
         name: 'Charlotte Dobre',
         url: 'https://charlottedobre.com/',
-        image: 'https://fourthwall.com/webflow-cdn/63ff7c6ecc83f97ec5fe9155/6711ee2afecb82fe8e61cf68_charlottedobre.webp',
+        image: '/images/shops/6674544c74d4647b1214bce0_charlotte dobre.webp',
         alt: 'Charlotte Dobre Store'
       }
     ],
@@ -128,43 +128,43 @@ const CustomizableShops = () => {
       {
         name: 'NY Shop',
         url: 'https://nyshop.fourthwall.com/en-eur',
-        image: 'https://fourthwall.com/webflow-cdn/63ff7c6ecc83f97ec5fe9155/670f6a22b19ab6f16df04f09_nyshop.webp',
+        image: '/images/shops/65eaf18d98756154df4af2c9_nyshop.webp',
         alt: 'NY Shop'
       },
       {
         name: 'Big Think',
         url: 'https://bigthink.com/en-eur',
-        image: 'https://fourthwall.com/webflow-cdn/63ff7c6ecc83f97ec5fe9155/670f6e4c4bdb0063b8a83f91_bigthink.webp',
+        image: '/images/shops/65e8c24e435d377ea8bc4453_bigthink.webp',
         alt: 'Big Think Store'
       },
       {
         name: 'Sour Boys',
         url: 'https://sourboysofficial.com/',
-        image: 'https://fourthwall.com/webflow-cdn/63ff7c6ecc83f97ec5fe9155/670f711c2ff5bfa31fc82c3b_sourboys.webp',
+        image: '/images/shops/65eb1fbb87e2eeb123487cf8_sourboys.webp',
         alt: 'Sour Boys Store'
       },
       {
         name: 'ICMAP',
         url: 'https://icmap.com/',
-        image: 'https://fourthwall.com/webflow-cdn/63ff7c6ecc83f97ec5fe9155/670f75a22ff5bfa31fc8c82a_icmap.webp',
+        image: '/images/shops/65e8c1f9fddc8c81df5df799_icmap.webp',
         alt: 'I Could Murder A Podcast Store'
       },
       {
         name: 'Sunny Sixteen',
         url: 'https://sunnysixteen.com/',
-        image: 'https://fourthwall.com/webflow-cdn/63ff7c6ecc83f97ec5fe9155/670f796e14c2c76ad4a99406_sunnysixteen.webp',
+        image: '/images/shops/65eaeb82dfecbb91a0f332fa_sunnysxiteen.webp',
         alt: 'Sunny Sixteen Store'
       },
       {
         name: 'Face Over Matter',
         url: 'https://faceovermatter.com/',
-        image: 'https://fourthwall.com/webflow-cdn/63ff7c6ecc83f97ec5fe9155/670f7b42c83f6fd52e0cc9f1_faceovermatter.webp',
+        image: '/images/shops/65eaf04d1b2f6b0794256cf9_faceovermatter.webp',
         alt: 'Face Over Matter Store'
       },
       {
         name: 'Ben & Emil',
         url: 'https://benandemilshow.com/en-eur',
-        image: 'https://fourthwall.com/webflow-cdn/63ff7c6ecc83f97ec5fe9155/6714c4a03feb0b09feb79a63_ben%26emil.webp',
+        image: '/images/shops/65e8c26feded3ce8ae5c3788_ben&emil.webp',
         alt: 'Ben & Emil Show Store'
       }
     ]
