@@ -1,0 +1,190 @@
+.setup-checklist-widget {
+  background: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+
+.checklist-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  border-bottom: 1px solid #E5E7EB;
+}
+
+.setup-checklist-widget.minimized .checklist-header {
+  border-bottom: none;
+  padding: 16px 24px;
+}
+
+.checklist-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1F2937;
+  margin: 0;
+}
+
+.checklist-content {
+  padding: 24px;
+}
+
+.checklist-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.checklist-step {
+  position: relative;
+  background: #F9FAFB;
+  border: 1px solid #E5E7EB;
+  border-radius: 10px;
+  padding: 20px;
+  transition: all 0.2s;
+}
+
+.checklist-step:hover {
+  background: #F3F4F6;
+}
+
+.checklist-step.highlighted {
+  background: #FEF3C7;
+  border-color: #FCD34D;
+}
+
+.checklist-step.highlighted:hover {
+  background: #FEF08A;
+}
+
+.checklist-step.completed {
+  background: #ECFDF5;
+  border-color: #6EE7B7;
+}
+
+.checklist-step.completed:hover {
+  background: #D1FAE5;
+}
+
+.step-indicator {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.check-icon {
+  width: 32px;
+  height: 32px;
+  background: #39B54A;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+}
+
+.check-icon .material-icons-outlined {
+  font-size: 20px;
+}
+
+.step-number {
+  width: 32px;
+  height: 32px;
+  background: #6B7280;
+  color: #FFFFFF;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.step-content {
+  margin-left: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.step-info {
+  flex: 1;
+}
+
+.step-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1F2937;
+  margin: 0 0 4px 0;
+}
+
+.step-description {
+  font-size: 0.875rem;
+  color: #6B7280;
+  margin: 0;
+}
+
+.step-cta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: #39B54A;
+  color: #FFFFFF;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+
+.step-cta:hover {
+  background: #2E8B3D;
+  transform: translateY(-1px);
+}
+
+.step-cta .material-icons-outlined {
+  font-size: 18px;
+}
+
+.done-label {
+  font-size: 0.875rem;
+  color: #39B54A;
+  font-weight: 600;
+}
+
+.progress-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: #E5E7EB;
+  border-radius: 0 0 10px 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #39B54A;
+  transition: width 0.3s ease;
+}
+
+.checklist-step.highlighted .progress-fill {
+  background: #F59E0B;
+}
+
+@media (max-width: 768px) {
+  .step-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .step-cta {
+    width: 100%;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
+
+.printify-main-content {
+  flex: 1;
+  margin-left: 260px;
+  margin-top: 56px;
+  padding: 40px;
+  background: #F2F6F9;
+  min-height: calc(100vh - 56px);
+  transition: margin-left 0.3s ease;
+}
+
+.demo-container {
+  max-width: 1272px;
+  margin: 0 auto;
+}
+
+.demo-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1F2937;
+  margin: 0 0 8px 0;
+}
+
+.demo-description {
+  font-size: 1rem;
+  color: #6B7280;
+  margin: 0 0 40px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .printify-main-content {
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .demo-title {
+    font-size: 1.5rem;
+  }
+}

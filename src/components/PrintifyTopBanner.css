@@ -1,0 +1,63 @@
+.printify-top-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  background: #F9FAFB;
+  border-bottom: 1px solid #E5E7EB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  z-index: 1001;
+}
+
+.banner-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  justify-content: center;
+}
+
+.banner-text {
+  font-size: 14px;
+  color: #1F2937;
+  font-weight: 500;
+}
+
+.banner-link {
+  font-size: 14px;
+  color: #39B54A;
+  font-weight: 600;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.banner-link:hover {
+  color: #2E8B3D;
+}
+
+.banner-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6B7280;
+  transition: all 0.2s;
+  margin-left: auto;
+}
+
+.banner-close:hover {
+  background: #F3F4F6;
+  color: #1F2937;
+}
+
+.banner-close .material-icons-outlined {
+  font-size: 20px;
+}

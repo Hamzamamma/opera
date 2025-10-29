@@ -1,0 +1,241 @@
+.bestsellers-widget {
+  margin-bottom: 40px;
+}
+
+.bestsellers-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.bestsellers-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1F2937;
+  margin: 0;
+}
+
+.bestsellers-carousel-container {
+  position: relative;
+}
+
+.bestsellers-carousel {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 8px 0;
+  scrollbar-width: thin;
+  scrollbar-color: #D1D5DB transparent;
+}
+
+.bestsellers-carousel::-webkit-scrollbar {
+  height: 8px;
+}
+
+.bestsellers-carousel::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.bestsellers-carousel::-webkit-scrollbar-thumb {
+  background: #D1D5DB;
+  border-radius: 4px;
+}
+
+.bestsellers-carousel::-webkit-scrollbar-thumb:hover {
+  background: #9CA3AF;
+}
+
+.bestseller-card {
+  flex: 0 0 300px;
+  background: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.bestseller-card:hover {
+  border-color: #39B54A;
+  box-shadow: 0 4px 12px rgba(57, 181, 74, 0.15);
+  transform: translateY(-4px);
+}
+
+.bestseller-image-wrap {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  background: #F9FAFB;
+  overflow: hidden;
+}
+
+.bestseller-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.product-mockup {
+  width: 160px;
+  height: 160px;
+  background: #E5E7EB;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-mockup .material-icons-outlined {
+  font-size: 80px;
+  color: #9CA3AF;
+}
+
+.favorite-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 40px;
+  height: 40px;
+  background: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  z-index: 2;
+}
+
+.favorite-btn:hover {
+  background: #F9FAFB;
+  border-color: #39B54A;
+  transform: scale(1.1);
+}
+
+.favorite-btn .material-icons-outlined {
+  font-size: 20px;
+  color: #6B7280;
+  transition: color 0.2s;
+}
+
+.favorite-btn.active .material-icons-outlined {
+  color: #EF4444;
+}
+
+.bestseller-badge {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  padding: 6px 12px;
+  background: #DBEAFE;
+  color: #1E40AF;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 6px;
+  text-transform: capitalize;
+}
+
+.bestseller-info {
+  padding: 20px;
+}
+
+.bestseller-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1F2937;
+  margin: 0 0 4px 0;
+  line-height: 1.4;
+}
+
+.bestseller-brand {
+  font-size: 0.875rem;
+  color: #6B7280;
+  margin: 0 0 12px 0;
+}
+
+.bestseller-pricing {
+  margin-bottom: 12px;
+}
+
+.bestseller-price {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1F2937;
+  margin: 0 0 4px 0;
+}
+
+.bestseller-premium-price {
+  font-size: 0.875rem;
+  color: #6B7280;
+  margin: 0;
+}
+
+.bestseller-details {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.875rem;
+  color: #6B7280;
+  flex-wrap: wrap;
+}
+
+.bestseller-details span:not(:last-child):not(:nth-child(2)):not(:nth-child(4)) {
+  margin-right: 0;
+}
+
+.bestsellers-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  background: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  z-index: 10;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.bestsellers-nav:hover {
+  background: #F9FAFB;
+  border-color: #39B54A;
+  transform: translateY(-50%) scale(1.05);
+}
+
+.bestsellers-nav.left {
+  left: -24px;
+}
+
+.bestsellers-nav.right {
+  right: -24px;
+}
+
+.bestsellers-nav .material-icons-outlined {
+  font-size: 24px;
+  color: #6B7280;
+}
+
+.bestsellers-nav:hover .material-icons-outlined {
+  color: #39B54A;
+}
+
+@media (max-width: 768px) {
+  .bestsellers-nav {
+    display: none;
+  }
+
+  .bestseller-card {
+    flex: 0 0 280px;
+  }
+}

@@ -1,4 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+  /* Printify Color Variables */
+  --background-primary: #F2F6F9;
+  --text-primary: #1C273A;
+  --text-secondary: #6B7280;
+  --text-tertiary: #9CA3AF;
+  --text-link: #39B54A;
+  --text-link-hover: #2E8B3D;
+  --text-destructive: #EF4444;
+  --fill-accent-green: #39B54A;
+  --fill-accent-green-hover: #2E8B3D;
+  --fill-accent-khaki: #A8A794;
+  --fill-accent-purple: #8B5CF6;
+  --fill-primary: #FFFFFF;
+  --fill-disabled: #F3F4F6;
+  --border-weak: #DEE8F0;
+  --border-focus: #39B54A;
+  --icon-primary: #566074;
+
+  /* Typography */
+  --text-weight-medium: 500;
+  --text-weight-semi-medium: 600;
+}
+
 .app {
   width: 100%;
   min-height: 100vh;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #F2F6F9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }

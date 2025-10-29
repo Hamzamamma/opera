@@ -1,0 +1,110 @@
+.store-quick-view-widget {
+  background: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.store-quick-view-widget.minimized {
+  margin-bottom: 16px;
+}
+
+.widget-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  border-bottom: 1px solid #E5E7EB;
+}
+
+.store-quick-view-widget.minimized .widget-header {
+  border-bottom: none;
+  padding: 16px 24px;
+}
+
+.store-info-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.store-icon-large {
+  flex-shrink: 0;
+}
+
+.store-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.store-name-large {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1F2937;
+  margin: 0;
+}
+
+.store-status {
+  font-size: 0.875rem;
+  color: #39B54A;
+  font-weight: 500;
+}
+
+.minimize-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6B7280;
+  transition: all 0.2s;
+}
+
+.minimize-btn:hover {
+  background: #F3F4F6;
+  color: #1F2937;
+}
+
+.minimize-btn .material-icons-outlined {
+  font-size: 24px;
+}
+
+.widget-content {
+  padding: 24px;
+}
+
+.quick-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.stat-label {
+  font-size: 0.875rem;
+  color: #6B7280;
+  font-weight: 500;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1F2937;
+}
+
+@media (max-width: 768px) {
+  .quick-stats {
+    grid-template-columns: 1fr;
+  }
+}

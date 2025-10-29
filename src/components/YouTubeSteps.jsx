@@ -16,9 +16,9 @@ const YouTubeSteps = () => {
               <img src={shopImage} alt="Crea il tuo negozio" className="card-main-image" />
             </div>
             <div className="youtube-card-content">
-              <h2 className="youtube-card-title">1. CREA IL TUO NEGOZIO</h2>
+              <h2 className="youtube-card-title">1. Crea il tuo negozio</h2>
               <p className="youtube-card-desc">
-                Fourthwall ti permette di creare un negozio, senza bisogno di codice. Usa strumenti drag and drop per costruire un sito che sia unicamente tuo. Trova il prodotto giusto per i tuoi fan e carica il tuo design.
+                Fourthwall ti permette di creare un negozio senza bisogno di codice. Usa gli strumenti drag-and-drop per costruire un sito unico. Trova il prodotto perfetto per i tuoi fan e carica il tuo design.
               </p>
               <a href="#" className="youtube-card-link">Inizia ora →</a>
             </div>
@@ -30,11 +30,11 @@ const YouTubeSteps = () => {
               <img src={connectImage} alt="Collega gli account" className="card-main-image" />
             </div>
             <div className="youtube-card-content">
-              <h2 className="youtube-card-title">2. COLLEGA GLI ACCOUNT</h2>
+              <h2 className="youtube-card-title">2. Collega gli account</h2>
               <p className="youtube-card-desc">
                 Collega il tuo negozio Fourthwall al tuo account YouTube. Puoi farlo navigando nella tua dashboard e trovando YouTube sotto "App". Segui la nostra guida per le istruzioni complete.
               </p>
-              <a href="#" className="youtube-card-link">Collegati →</a>
+              <a href="#" className="youtube-card-link">Connetti →</a>
             </div>
           </article>
 
@@ -44,9 +44,9 @@ const YouTubeSteps = () => {
               <img src={promoteImage} alt="Promuovi il tuo negozio" className="card-main-image" />
             </div>
             <div className="youtube-card-content">
-              <h2 className="youtube-card-title">3. PROMUOVI IL TUO NEGOZIO</h2>
+              <h2 className="youtube-card-title">3. Promuovi il tuo negozio</h2>
               <p className="youtube-card-desc">
-                Infine, promuovi il tuo nuovo negozio e i prodotti personalizzati sui tuoi social. Annuncia il tuo sito nei tuoi video, facendo sapere alle persone che possono fare shopping mentre guardano i tuoi contenuti.
+                Infine, promuovi il tuo nuovo negozio e i prodotti personalizzati sui tuoi social media. Annuncia il tuo sito nei tuoi video e fai sapere alle persone che possono fare acquisti mentre guardano i tuoi contenuti.
               </p>
               <a href="#" className="youtube-card-link">Scopri di più →</a>
             </div>

@@ -86,7 +86,7 @@ const FeaturesSection = () => {
           </p>
 
           <div className="dashboard-image-container">
-            <img src={dashboardImg} alt="Dashboard Preview" className="dashboard-image" />
+            <img src={dashboardImg} alt="Anteprima Dashboard" className="dashboard-image" />
           </div>
         </div>
 
@@ -99,7 +99,7 @@ const FeaturesSection = () => {
           </p>
 
           <div className="world-map">
-            <img src={globalMapImg} alt="Global Manufacturing Map" className="map-image" />
+            <img src={globalMapImg} alt="Mappa Produzione Globale" className="map-image" />
           </div>
         </div>
 
@@ -112,7 +112,7 @@ const FeaturesSection = () => {
           </p>
 
           <div className="hoodie-image-container">
-            <img src={hoodieImg} alt="Product Design Tool" className="hoodie-image" />
+            <img src={hoodieImg} alt="Strumento Design Prodotti" className="hoodie-image" />
           </div>
         </div>
 
@@ -126,7 +126,7 @@ const FeaturesSection = () => {
           </p>
 
           <div className="platforms-image-container">
-            <img src={platformsImg} alt="Platform Integrations" className="platforms-image" />
+            <img src={platformsImg} alt="Integrazioni Piattaforme" className="platforms-image" />
           </div>
         </div>
       </div>

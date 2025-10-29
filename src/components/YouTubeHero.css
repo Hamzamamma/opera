@@ -1,0 +1,223 @@
+.youtube-hero-section {
+  background: #FF0000;
+  padding: 80px 40px;
+  min-height: 600px;
+  overflow: hidden;
+  position: relative;
+}
+
+.youtube-hero-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+/* Left Content */
+.youtube-hero-content {
+  color: #FFFFFF;
+  padding: 40px 0;
+}
+
+.youtube-hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  letter-spacing: -0.02em;
+}
+
+.youtube-hero-description {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 32px;
+  opacity: 0.95;
+  max-width: 500px;
+}
+
+.youtube-hero-btn {
+  display: inline-block;
+  background: #FFFFFF;
+  color: #FF0000;
+  font-size: 1.125rem;
+  font-weight: 600;
+  padding: 16px 40px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.youtube-hero-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  background: #F5F5F5;
+}
+
+/* Right Testimonials Carousel */
+.youtube-testimonials-slider {
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+}
+
+.youtube-slider-track {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: scroll-up 30s linear infinite;
+}
+
+.youtube-slider-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll-up {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(calc(-50% - 10px));
+  }
+}
+
+/* Testimonial Card */
+.youtube-testimonial-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  min-height: 140px;
+}
+
+.youtube-testimonial-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  background: #FFFFFF;
+}
+
+.testimonial-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.testimonial-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.testimonial-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.testimonial-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #1A1A1A;
+}
+
+.testimonial-handle {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.twitter-icon {
+  flex-shrink: 0;
+}
+
+.twitter-icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.twitter-icon svg path {
+  fill: #1DA1F2;
+}
+
+.testimonial-quote {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #333;
+  margin: 0;
+  text-align: left;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .youtube-hero-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .youtube-hero-title {
+    font-size: 2.5rem;
+  }
+
+  .youtube-hero-description {
+    font-size: 1.1rem;
+  }
+
+  .youtube-testimonials-slider {
+    height: 400px;
+  }
+}
+
+@media (max-width: 640px) {
+  .youtube-hero-section {
+    padding: 60px 20px;
+  }
+
+  .youtube-hero-title {
+    font-size: 2rem;
+  }
+
+  .youtube-hero-description {
+    font-size: 1rem;
+  }
+
+  .youtube-hero-btn {
+    font-size: 1rem;
+    padding: 14px 32px;
+  }
+
+  .youtube-testimonials-slider {
+    height: 350px;
+  }
+
+  .youtube-testimonial-card {
+    padding: 16px;
+  }
+
+  .testimonial-quote {
+    font-size: 0.85rem;
+  }
+}

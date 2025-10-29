@@ -1,0 +1,140 @@
+.start-something-great-widget {
+  margin-bottom: 40px;
+}
+
+.start-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.start-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1F2937;
+  margin: 0;
+}
+
+.start-carousel-container {
+  position: relative;
+}
+
+.start-carousel {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.start-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.start-slide {
+  flex: 0 0 100%;
+  height: 400px;
+  background: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px;
+  text-align: center;
+  background: linear-gradient(135deg, #F9FAFB 0%, #FFFFFF 100%);
+}
+
+.start-slide-image {
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(135deg, #39B54A 0%, #2E8B3D 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  box-shadow: 0 8px 24px rgba(57, 181, 74, 0.2);
+}
+
+.start-slide-image .material-icons-outlined {
+  font-size: 56px;
+  color: #FFFFFF;
+}
+
+.start-slide-content {
+  max-width: 500px;
+}
+
+.start-slide-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1F2937;
+  margin: 0 0 12px 0;
+}
+
+.start-slide-desc {
+  font-size: 1rem;
+  color: #6B7280;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.start-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  background: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  z-index: 10;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.start-nav:hover {
+  background: #F9FAFB;
+  border-color: #39B54A;
+  transform: translateY(-50%) scale(1.05);
+}
+
+.start-nav.left {
+  left: -24px;
+}
+
+.start-nav.right {
+  right: -24px;
+}
+
+.start-nav .material-icons-outlined {
+  font-size: 24px;
+  color: #6B7280;
+}
+
+.start-nav:hover .material-icons-outlined {
+  color: #39B54A;
+}
+
+@media (max-width: 768px) {
+  .start-nav {
+    display: none;
+  }
+
+  .start-slide {
+    height: 300px;
+    padding: 32px 24px;
+  }
+
+  .start-slide-title {
+    font-size: 1.375rem;
+  }
+}

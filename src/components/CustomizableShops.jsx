@@ -175,11 +175,11 @@ const CustomizableShops = () => {
       <div className="container">
         <div className="templates-header">
           <h2 className="templates-title">
-            Fully-customizable shops,<br />
-            100% owned by you
+            Negozi completamente personalizzabili,<br />
+            100% tuoi
           </h2>
           <p className="templates-subtitle">
-            Easily customize your design, layout, and domain to create a brand that's as unique as you are.
+            Personalizza facilmente il tuo design, layout e dominio per creare un brand unico come te.
           </p>
         </div>
       </div>

@@ -12,15 +12,15 @@ const CustomProducts = () => {
         <div className="custom-hero-container">
           {/* Left: Content */}
           <div className="custom-hero-content">
-            <h1 className="custom-hero-title">Prodotti Brandizzati Personalizzati per la Tua Azienda</h1>
+            <h1 className="custom-hero-title">Prodotti brandizzati personalizzati per la tua azienda</h1>
 
             <p className="custom-hero-description">
-              Crea merchandising aziendale premium senza problemi — per il tuo team, i tuoi clienti o i tuoi più grandi fan.
+              Crea merchandise di qualità senza sforzo — per il tuo team, i tuoi clienti o i tuoi più grandi fan.
             </p>
 
             <div className="custom-hero-cta">
               <a href="#" className="custom-btn custom-btn-primary-lg">
-                Inizia Ora
+                Inizia ora
               </a>
             </div>
 
@@ -31,7 +31,7 @@ const CustomProducts = () => {
 
           {/* Right: Visual */}
           <div className="custom-hero-visual">
-            <img src={heroImage} alt="Prodotti brandizzati" className="custom-hero-image" />
+            <img src={heroImage} alt="منتجات ذات علامة تجارية" className="custom-hero-image" />
           </div>
         </div>
       </section>
@@ -40,19 +40,19 @@ const CustomProducts = () => {
       <section className="why-businesses">
         <div className="why-container">
           <div className="why-header">
-            <h1 className="why-title">Perché le Aziende Usano Fourthwall</h1>
-            <p className="why-subtitle">Fidato da team in rapida crescita presso startup, agenzie e altro</p>
+            <h1 className="why-title">Perché le aziende usano Fourthwall</h1>
+            <p className="why-subtitle">Di fiducia per i team in crescita rapida di startup, agenzie e altro ancora</p>
           </div>
 
           <div className="why-grid">
             {/* Card 1: Set up in minutes */}
             <article className="why-card">
               <div className="why-icon-wrapper">
-                <img src={whyQuality} alt="Configurazione in minuti" className="why-card-image" />
+                <img src={whyQuality} alt="Configura in pochi minuti" className="why-card-image" />
               </div>
-              <h3 className="why-card-title">Configurazione in minuti</h3>
+              <h3 className="why-card-title">Configura in pochi minuti</h3>
               <p className="why-card-desc">
-                Usa il nostro builder senza codice per creare una vetrina brandizzata e prodotti che riflettono la tua azienda.
+                Usa il builder senza codice per creare una vetrina brandizzata e prodotti che riflettono la tua azienda.
               </p>
             </article>
 
@@ -63,7 +63,7 @@ const CustomProducts = () => {
               </div>
               <h3 className="why-card-title">Vendi o invia con un link</h3>
               <p className="why-card-desc">
-                Spedisci gadget aziendali direttamente ai dipendenti o rendi pubblico il tuo negozio per clienti, fan e partner.
+                Spedisci merchandise aziendale direttamente ai dipendenti o rendi il tuo negozio pubblico per clienti, fan e partner.
               </p>
             </article>
 
@@ -74,7 +74,7 @@ const CustomProducts = () => {
               </div>
               <h3 className="why-card-title">Nessun inventario richiesto</h3>
               <p className="why-card-desc">
-                Che si tratti di stampa su richiesta o di una consegna personalizzata, ci occupiamo di produzione, stoccaggio, imballaggio e spedizione—così non devi farlo tu.
+                Che sia print on demand o drop shipping personalizzato, gestiamo produzione, stoccaggio, imballaggio e spedizione — così tu non devi farlo.
               </p>
             </article>
 
@@ -85,7 +85,7 @@ const CustomProducts = () => {
               </div>
               <h3 className="why-card-title">Per team <span className="why-highlight">e</span> clienti</h3>
               <p className="why-card-desc">
-                Perfetto per regali di onboarding, premi interni, merchandising per eventi, kit per influencer o qualsiasi altra cosa di cui potresti aver bisogno.
+                Perfetto per regali di benvenuto, premi interni, merchandise per eventi, kit per influencer o qualsiasi altra cosa ti serva.
               </p>
             </article>
           </div>
