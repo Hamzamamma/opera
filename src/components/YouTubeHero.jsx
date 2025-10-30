@@ -6,67 +6,67 @@ const YouTubeHero = () => {
       name: 'DJENTBEARD',
       handle: '@djentbeard',
       avatar: '/images/youtube-testimonials/djentbeard.webp',
-      quote: '@FourthwallHQ sono i migliori del settore'
+      quote: '@FourthwallHQ are the best in the business'
     },
     {
-      name: 'Philip DeFranco',
+      name: 'Philip DeFranco 👊🏻',
       handle: '@PhillyD',
       avatar: '/images/youtube-testimonials/phillyd.webp',
-      quote: 'Solo il mio parere molto parziale, MA se usi Spring e/o hai generalmente bisogno di abbigliamento, merchandise e/o servizi di membership dovresti usare Fourthwall.com Hanno soluzioni per creator piccoli e grandi.'
+      quote: 'Just my veeeeeeery biased opinion, BUT if you use Spring and/or just generally need clothing, merchandise, and/or membership services you should be using Fourthwall.com They\'ve got solutions for small and big creators alike.'
     },
     {
       name: 'Patrick Stirling',
       handle: '@PatrickStirling',
       avatar: '/images/youtube-testimonials/patrick.webp',
-      quote: 'Per tutte le cose che @FourthwallHQ fa in background per rendermi le cose più facili, funzionalità rivolte al pubblico come queste hanno probabilmente un impatto molto maggiore di quanto realizzi. È fantastico poter ringraziare direttamente chi mi supporta.'
+      quote: 'For all the things @FourthwallHQ does on the back end to make things easier for me, audience-facing features like these likely have a much larger impact than I realize. Feels great to be able to directly thank those who support me.'
     },
     {
       name: 'Muaaz',
       handle: '@mws',
       avatar: '/images/youtube-testimonials/muaaz.webp',
-      quote: 'Non posso raccomandare @FourthwallHQ abbastanza, provateli assolutamente - vi daranno ragione'
+      quote: 'couldnt vouch for @FourthwallHQ enough, def tap in - they\'ll get you rightttt'
     },
     {
       name: 'Nightowl',
       handle: '@ajsarsfield',
       avatar: '/images/youtube-testimonials/nightowl.webp',
-      quote: '@FourthwallHQ è una grande raccomandazione.. soprattutto se fai anche live streaming, la qualità è ottima, molte opzioni di merchandise'
+      quote: '@FourthwallHQ is a BIG vouch.. Especially if you live stream too, Quality is great, plenty of merch options'
     },
     {
       name: 'CodyRiffs',
       handle: '@codyriffs',
       avatar: '/images/youtube-testimonials/codyriffs.webp',
-      quote: 'Ho appena ricevuto un paio di felpe dalla mia Winter Collection e sono così COMODE! Un grande ringraziamento a @FourthwallHQ per fornire articoli di qualità straordinaria ai creator 😊'
+      quote: 'I just received a couple hoodies from my Winter Collection and they are so COMFY! Big shoutout to @FourthwallHQ for providing amazing quality items for creators 😊'
     },
     {
       name: 'YuuriVoice',
       handle: '@YuuriVoice',
       avatar: '/images/youtube-testimonials/yuuri.webp',
-      quote: 'Ho visto cosa sta preparando Fourthwall e posso confermare che per chiunque voglia costruire una piattaforma di membership e merchandise, hanno tutti gli strumenti giusti, le funzionalità e la visione per avere successo. Le loro funzionalità superano Patreon.'
+      quote: 'I\'ve seen what Fourthwall has cooking and can confirm that for anyone looking to build a membership and merch platform, they have all the right tools, functionality, and vision to succeed. Their features dunk all over Patreon.'
     },
     {
-      name: 'Nythical',
+      name: 'Nythical🍄🌙',
       handle: '@Nythical_',
       avatar: '/images/youtube-testimonials/nythical.webp',
-      quote: 'Amo fourthwall! Lo consiglierei a qualsiasi creator, è di gran lunga l\'opzione migliore là fuori'
+      quote: 'i love fourthwall! Would recommend to any creator by far the best option out there'
     },
     {
-      name: 'ArielJade',
+      name: 'ArielJade®',
       handle: '@ArielJadeLive',
       avatar: '/images/youtube-testimonials/arieljade.webp',
-      quote: 'RAGAZZI. @FourthwallHQ è letteralmente il MIGLIOR negozio di merchandise che ho trovato come imprenditore creativo. Sto progettando come un matto. Nuovo merchandise Crew disponibile ora!'
+      quote: 'Y\'ALL. @FourthwallHQ is legit the BEST merch store I have found as a creative entrepreneur. I\'ve been designing like crazy. New Crew merch available now!'
     },
     {
       name: 'Aura',
       handle: '@aurahack',
       avatar: '/images/youtube-testimonials/aura.webp',
-      quote: 'C\'è molta più varietà che posso fare ora rispetto a solo t-shirt e canotta grazie alle cose offerte da @FourthwallHQ *e* i miei personaggi OC diventano i modelli dall\'inizio quindi sono davvero emozionato!! HO UN MARCHIO DI MODA ORA :DDD'
+      quote: 'There\'s a lot more variety I can do now than just t-shirt and tanktop thanks to the stuff on offer from @FourthwallHQ *and* my OCs get to be the models from the start so I\'m really excited!! I HAVE A FASHION BRAND NOW :DDD'
     },
     {
       name: 'Moni',
       handle: '@monistreams',
       avatar: '/images/youtube-testimonials/moni.webp',
-      quote: 'Grazie a @FourthwallHQ per averlo reso così facile! Il servizio clienti è fantastico e la qualità del prodotto è eccellente'
+      quote: '@FourthwallHQ !!!!!!!!'
     }
   ];
 

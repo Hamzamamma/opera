@@ -1,0 +1,135 @@
+/* Import Dashboard styles */
+@import './Dashboard.css';
+
+/* PROMOTIONS PAGE LAYOUT */
+.fw-promotions-page {
+  display: flex;
+  min-height: 100vh;
+  background: var(--color-bg);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  padding-bottom: 80px;
+}
+
+.fw-promotions-main {
+  margin-left: var(--sidebar-width);
+  flex: 1;
+  padding: var(--spacing-xl);
+  max-width: 1200px;
+}
+
+/* PROMOTIONS HEADER */
+.fw-promotions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.fw-promotions-header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.fw-promotions-toolbar {
+  display: flex;
+  gap: var(--spacing-md);
+  align-items: center;
+}
+
+/* CAROUSEL */
+.fw-promotions-carousel {
+  display: flex;
+  gap: var(--spacing-md);
+  overflow-x: auto;
+  margin-bottom: var(--spacing-xl);
+  padding-bottom: var(--spacing-sm);
+}
+
+/* TABS */
+.fw-promotions-tabs {
+  display: flex;
+  gap: var(--spacing-lg);
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: var(--spacing-xl);
+}
+
+.fw-promotions-tabs .fw-tab {
+  padding: var(--spacing-md) 0;
+  background: none;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-secondary);
+  cursor: pointer;
+  position: relative;
+  transition: color 0.2s;
+  font-family: inherit;
+  text-decoration: none;
+}
+
+.fw-promotions-tabs .fw-tab:hover {
+  color: var(--color-primary);
+}
+
+.fw-promotions-tabs .fw-tab.active {
+  color: var(--color-primary);
+}
+
+.fw-promotions-tabs .fw-tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--color-primary);
+}
+
+/* EMPTY STATE */
+.fw-promotions-empty {
+  text-align: center;
+  padding: 80px var(--spacing-xl);
+}
+
+.fw-promotions-empty h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 var(--spacing-lg) 0;
+  color: var(--color-primary);
+}
+
+.fw-promotions-empty .fw-btn {
+  min-width: 200px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .fw-promotions-main {
+    margin-left: 0;
+    padding: var(--spacing-md);
+  }
+
+  .fw-promotions-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+  }
+
+  .fw-promotions-header h1 {
+    font-size: 24px;
+  }
+
+  .fw-promotions-toolbar {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .fw-promotions-empty {
+    padding: 60px var(--spacing-md);
+  }
+
+  .fw-promotions-empty h2 {
+    font-size: 18px;
+  }
+}

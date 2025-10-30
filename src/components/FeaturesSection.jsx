@@ -71,8 +71,10 @@ const FeaturesSection = () => {
     <section className="features-section">
       {/* Section Header */}
       <div className="section-header">
-        <h2 className="section-title-main">Rendiamo l'ecommerce facile,</h2>
-        <p className="section-subtitle-main">nessuna esperienza necessaria</p>
+        <h1 className="main-title">
+          Rendiamo l'ecommerce facile,<br />
+          <span className="title-gray">nessuna esperienza necessaria</span>
+        </h1>
       </div>
 
       {/* Features Grid */}
@@ -100,6 +102,22 @@ const FeaturesSection = () => {
 
           <div className="world-map">
             <img src={globalMapImg} alt="Mappa Produzione Globale" className="map-image" />
+
+            {/* Statistics Overlay */}
+            <div className="stats-overlay">
+              <div className="stat-item">
+                <div className="stat-value">17</div>
+                <div className="stat-label">manufacturers</div>
+              </div>
+              <div className="stat-item">
+                <div className="stat-value">$4.80</div>
+                <div className="stat-label">avg. ship cost</div>
+              </div>
+              <div className="stat-item">
+                <div className="stat-value">4 days</div>
+                <div className="stat-label">avg. ship time</div>
+              </div>
+            </div>
           </div>
         </div>
 

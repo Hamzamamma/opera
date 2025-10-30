@@ -16,7 +16,7 @@ const YouTubeSteps = () => {
               <img src={shopImage} alt="Crea il tuo negozio" className="card-main-image" />
             </div>
             <div className="youtube-card-content">
-              <h2 className="youtube-card-title">1. Crea il tuo negozio</h2>
+              <h2 className="youtube-card-title">1. CREA IL TUO NEGOZIO</h2>
               <p className="youtube-card-desc">
                 Fourthwall ti permette di creare un negozio senza bisogno di codice. Usa gli strumenti drag-and-drop per costruire un sito unico. Trova il prodotto perfetto per i tuoi fan e carica il tuo design.
               </p>
@@ -30,7 +30,7 @@ const YouTubeSteps = () => {
               <img src={connectImage} alt="Collega gli account" className="card-main-image" />
             </div>
             <div className="youtube-card-content">
-              <h2 className="youtube-card-title">2. Collega gli account</h2>
+              <h2 className="youtube-card-title">2. COLLEGA GLI ACCOUNT</h2>
               <p className="youtube-card-desc">
                 Collega il tuo negozio Fourthwall al tuo account YouTube. Puoi farlo navigando nella tua dashboard e trovando YouTube sotto "App". Segui la nostra guida per le istruzioni complete.
               </p>
@@ -44,7 +44,7 @@ const YouTubeSteps = () => {
               <img src={promoteImage} alt="Promuovi il tuo negozio" className="card-main-image" />
             </div>
             <div className="youtube-card-content">
-              <h2 className="youtube-card-title">3. Promuovi il tuo negozio</h2>
+              <h2 className="youtube-card-title">3. PROMUOVI IL TUO NEGOZIO</h2>
               <p className="youtube-card-desc">
                 Infine, promuovi il tuo nuovo negozio e i prodotti personalizzati sui tuoi social media. Annuncia il tuo sito nei tuoi video e fai sapere alle persone che possono fare acquisti mentre guardano i tuoi contenuti.
               </p>

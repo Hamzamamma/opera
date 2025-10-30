@@ -1,41 +1,84 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './OrdersPage.css';
+import './ProductsPage.css';
 
-const OrdersPage = () => {
-  const [activeTab, setActiveTab] = useState('orders');
-  const [closedTips, setClosedTips] = useState([]);
+const ProductsPage = () => {
   const [searchQuery, setSearchQuery] = useState('');
 
-  const carouselTips = [
-    { id: 'freeShipping', emoji: '🚛', text: 'Tip: Offer free shipping on orders over $75' },
-    { id: 'abandonmentDiscount', emoji: '📨', text: 'Tip: Offer 5% off in checkout abandonment emails' },
-    { id: 'claimFreeDomain', emoji: '💎', text: 'Claim your free Fourthwall Pro domain' }
-  ];
-
   const products = [
-    { name: 'Comfort Colors Garment-Dyed Heavyweight T-Shirt', colors: 45, price: '$15.40', image: '/api/placeholder/200/200' },
-    { name: 'Cotton Heritage Unisex Premium Hoodie', colors: 15, price: '$26.95', image: '/api/placeholder/200/200' },
-    { name: 'Yupoong Classic Dad Hat', colors: 10, price: '$15.65', image: '/api/placeholder/200/200' },
-    { name: 'White Glossy Mug', colors: null, price: '$5.95', image: '/api/placeholder/200/200' },
-    { name: 'Kiss Cut Stickers', colors: null, price: '$2.29', image: '/api/placeholder/200/200' }
+    {
+      name: 'Comfort Colors Garment-Dyed Heavyweight T-Shirt',
+      colors: 45,
+      price: '$15.40',
+      image: '/api/placeholder/300/300'
+    },
+    {
+      name: 'Cotton Heritage Unisex Premium Hoodie',
+      colors: 15,
+      price: '$26.95',
+      image: '/api/placeholder/300/300'
+    },
+    {
+      name: 'Yupoong Classic Dad Hat',
+      colors: 10,
+      price: '$15.65',
+      image: '/api/placeholder/300/300'
+    },
+    {
+      name: 'White Glossy Mug',
+      colors: null,
+      price: '$5.95',
+      image: '/api/placeholder/300/300'
+    },
+    {
+      name: 'Kiss Cut Stickers',
+      colors: null,
+      price: '$2.29',
+      image: '/api/placeholder/300/300'
+    }
   ];
 
   const integrations = [
-    { name: 'YouTube Product Shelf', description: 'Promote products from your shop on your YouTube channels.', action: 'Connect' },
-    { name: 'TikTok Shop', description: 'Sell products from your shop directly to your fans on TikTok.', action: 'Connect' },
-    { name: 'Instagram & Facebook Shop', description: 'Sell products directly to your fans on Instagram or Facebook.', action: 'Manage' },
-    { name: 'Twitch gifting', description: 'Allow your viewers to gift products for chat when you\'re live.', action: 'Connect' },
-    { name: 'StreamElements alerts', description: 'Show stream alerts for product purchases and gifts.', action: 'Connect' },
-    { name: 'Streamlabs alerts', description: 'Show stream alerts for product purchases and gifts.', action: 'Connect' }
+    {
+      name: 'YouTube Product Shelf',
+      description: 'Promote products from your shop on your YouTube channels.',
+      link: 'https://help.fourthwall.com/hc/en-us/articles/13331252530203',
+      action: 'Connect'
+    },
+    {
+      name: 'TikTok Shop',
+      description: 'Sell products from your shop directly to your fans on TikTok.',
+      link: 'https://help.fourthwall.com/hc/en-us/articles/20059966612763',
+      action: 'Connect'
+    },
+    {
+      name: 'Instagram & Facebook Shop',
+      description: 'Sell products directly to your fans on Instagram or Facebook.',
+      link: 'https://help.fourthwall.com/hc/en-us/articles/13331280410907',
+      action: 'Manage'
+    },
+    {
+      name: 'Twitch gifting',
+      description: 'Allow your viewers to gift products for chat when you\'re live.',
+      link: 'https://help.fourthwall.com/hc/en-us/articles/13331277761563',
+      action: 'Connect'
+    },
+    {
+      name: 'StreamElements alerts',
+      description: 'Show stream alerts for product purchases and gifts.',
+      link: 'https://help.fourthwall.com/hc/en-us/articles/13331283282331',
+      action: 'Connect'
+    },
+    {
+      name: 'Streamlabs alerts',
+      description: 'Show stream alerts for product purchases and gifts.',
+      link: 'https://help.fourthwall.com/hc/en-us/articles/13331283282331',
+      action: 'Connect'
+    }
   ];
 
-  const closeTip = (id) => {
-    setClosedTips([...closedTips, id]);
-  };
-
   return (
-    <div className="fw-orders-page">
+    <div className="fw-products-page">
       {/* Sidebar */}
       <aside className="fw-sidebar">
         <div className="fw-sidebar__header">
@@ -50,8 +93,8 @@ const OrdersPage = () => {
         </div>
         <nav className="fw-sidebar__nav">
           <Link to="/" className="fw-nav-link">Home</Link>
-          <Link to="/orders" className="fw-nav-link active">Orders</Link>
-          <Link to="/products" className="fw-nav-link">Products</Link>
+          <Link to="/orders" className="fw-nav-link">Orders</Link>
+          <Link to="/products" className="fw-nav-link active">Products</Link>
           <Link to="/promotions" className="fw-nav-link">Promotions</Link>
           <Link to="#" className="fw-nav-link">Memberships</Link>
           <Link to="/site-design" className="fw-nav-link">Site design</Link>
@@ -62,16 +105,11 @@ const OrdersPage = () => {
       </aside>
 
       {/* Main Content */}
-      <main className="fw-orders-main">
+      <main className="fw-products-main">
         {/* Header */}
-        <div className="fw-orders-header">
-          <h1>Orders</h1>
-          <div className="fw-orders-toolbar">
-            <button className="fw-toolbar-btn" title="Export">
-              <svg xmlns="http://www.w3.org/2000/svg" height="16" fill="none" viewBox="0 0 32 32">
-                <path stroke="currentColor" strokeWidth="1.5" d="M31 22.407V31H1v-8.593m3.8-11.44L16 22.355l11.2-11.39M16 21.881V1" />
-              </svg>
-            </button>
+        <div className="fw-products-header">
+          <h1>Products</h1>
+          <div className="fw-products-toolbar">
             <button className="fw-toolbar-btn" title="Filter">
               <svg xmlns="http://www.w3.org/2000/svg" height="16" fill="none" viewBox="0 0 32 32">
                 <path stroke="currentColor" strokeWidth="1.5" d="M19.892 23.196v-7.66L30 3H2l10.108 12.536V29z" />
@@ -83,58 +121,26 @@ const OrdersPage = () => {
               </svg>
               <input
                 type="text"
-                placeholder="Search orders"
+                placeholder="Search products"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
               />
             </div>
+            <button className="fw-btn fw-btn-primary">Create new product</button>
           </div>
         </div>
 
-        {/* Carousel Tips */}
-        <div className="fw-orders-carousel">
-          {carouselTips.filter(tip => !closedTips.includes(tip.id)).map(tip => (
-            <div key={tip.id} className="fw-carousel-card">
-              <div className="fw-carousel-content">
-                <span className="fw-carousel-emoji">{tip.emoji}</span>
-                <p>{tip.text}</p>
-              </div>
-              <button className="fw-close-btn" onClick={() => closeTip(tip.id)}>
-                <svg xmlns="http://www.w3.org/2000/svg" height="12" fill="none" viewBox="0 0 32 32">
-                  <path stroke="currentColor" strokeLinejoin="bevel" strokeWidth="1.5" d="M2 30 30 2m0 28L2 2" />
-                </svg>
-              </button>
-            </div>
-          ))}
-        </div>
-
-        {/* Tabs */}
-        <div className="fw-orders-tabs">
-          <button
-            className={`fw-tab ${activeTab === 'orders' ? 'active' : ''}`}
-            onClick={() => setActiveTab('orders')}
-          >
-            Orders
-          </button>
-          <button
-            className={`fw-tab ${activeTab === 'donations' ? 'active' : ''}`}
-            onClick={() => setActiveTab('donations')}
-          >
-            Donations
-          </button>
-        </div>
-
         {/* Empty State */}
-        <div className="fw-orders-empty">
-          <h3>You haven't received any orders yet</h3>
-          <p>Here are a few recommendations to help you get your first sales</p>
+        <div className="fw-products-empty">
+          <h3>You haven't created any products yet</h3>
+          <p>Here are a few recommendations to help you get started</p>
         </div>
 
-        {/* Products Section */}
-        <section className="fw-orders-section">
+        {/* Create First Product Section */}
+        <section className="fw-products-section">
           <div className="fw-section-header">
-            <div>
-              <h3>Create another product</h3>
+            <div className="fw-section-title-group">
+              <h3>Create your first product</h3>
               <span className="fw-credit-badge">+$5 sample credit</span>
             </div>
             <div className="fw-section-actions">
@@ -142,6 +148,7 @@ const OrdersPage = () => {
               <button className="fw-btn fw-btn-primary">Create product</button>
             </div>
           </div>
+
           <div className="fw-products-grid">
             {products.map((product, index) => (
               <div key={index} className="fw-product-card">
@@ -160,12 +167,22 @@ const OrdersPage = () => {
         </section>
 
         {/* Integrations Section */}
-        <section className="fw-orders-section">
+        <section className="fw-products-section">
           <div className="fw-integrations-grid">
             {integrations.map((integration, index) => (
               <div key={index} className="fw-integration-card">
                 <h4>{integration.name}</h4>
-                <p>{integration.description}</p>
+                <p>
+                  {integration.description}
+                  {integration.link && (
+                    <>
+                      {' '}
+                      <a href={integration.link} target="_blank" rel="noreferrer">
+                        Learn more
+                      </a>
+                    </>
+                  )}
+                </p>
                 <button className="fw-btn fw-btn-secondary">{integration.action}</button>
               </div>
             ))}
@@ -194,4 +211,4 @@ const OrdersPage = () => {
   );
 };
 
-export default OrdersPage;
+export default ProductsPage;

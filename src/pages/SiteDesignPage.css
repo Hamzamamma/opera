@@ -1,0 +1,534 @@
+/* SITE DESIGN LAYOUT */
+.fw-site-design {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #f5f5f5;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* TOP HEADER */
+.fw-site-design-header {
+  background: white;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.fw-header-left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.fw-header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.fw-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+}
+
+.fw-logo svg {
+  height: 18px;
+  width: auto;
+}
+
+/* DROPDOWNS */
+.fw-page-dropdown,
+.fw-page-dropdown-mobile,
+.fw-page-selector {
+  position: relative;
+}
+
+.fw-dropdown-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+  color: #000;
+}
+
+.fw-dropdown-btn:hover {
+  background: #fafafa;
+  border-color: #d4d4d4;
+}
+
+.fw-dropdown-btn svg {
+  width: 12px;
+  height: 12px;
+  opacity: 0.5;
+}
+
+/* BUTTONS */
+.fw-more-btn {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.fw-more-btn:hover {
+  background: #fafafa;
+}
+
+.fw-btn-secondary {
+  padding: 8px 16px;
+  background: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.fw-btn-secondary:hover:not(:disabled) {
+  background: #fafafa;
+}
+
+.fw-btn-secondary:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* MAIN CONTENT */
+.fw-site-design-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* TOOLBAR */
+.fw-design-toolbar {
+  background: white;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fw-toolbar-left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.fw-toolbar-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.fw-page-dropdown-mobile {
+  display: none;
+}
+
+/* VIEW SWITCHER */
+.fw-view-switcher {
+  display: flex;
+  gap: 4px;
+  background: #f5f5f5;
+  padding: 4px;
+  border-radius: 8px;
+}
+
+.fw-view-btn {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #666;
+}
+
+.fw-view-btn:hover {
+  background: #e5e5e5;
+}
+
+.fw-view-btn.active {
+  background: white;
+  color: #000;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.fw-view-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* COMING SOON BADGE */
+.fw-coming-soon-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  background: #fef3c7;
+  border: 1px solid #eab308;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.fw-coming-soon-badge svg {
+  width: 10px;
+  height: 10px;
+  opacity: 0.7;
+}
+
+/* PREVIEW AREA */
+.fw-preview-area {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  overflow: auto;
+}
+
+.fw-preview-frame {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+  overflow: hidden;
+}
+
+.fw-preview-frame.desktop {
+  width: 100%;
+  max-width: 1200px;
+  height: 600px;
+}
+
+.fw-preview-frame.mobile {
+  width: 375px;
+  height: 667px;
+}
+
+.fw-preview-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fafafa;
+}
+
+.fw-preview-placeholder {
+  text-align: center;
+  color: #999;
+}
+
+.fw-preview-placeholder p {
+  font-size: 16px;
+  margin: 0;
+}
+
+/* BOTTOM PANEL */
+.fw-bottom-panel {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  border-top: 2px solid #e5e5e5;
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.05);
+  z-index: 90;
+}
+
+.fw-panel-handle {
+  text-align: center;
+  padding: 8px 0;
+  cursor: pointer;
+}
+
+.fw-handle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.fw-handle-bar {
+  width: 40px;
+  height: 4px;
+  background: #d4d4d4;
+  border-radius: 2px;
+  transition: background 0.2s;
+}
+
+.fw-handle-btn:hover .fw-handle-bar {
+  background: #a3a3a3;
+}
+
+.fw-panel-content {
+  padding: 0 24px 24px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+/* PANEL TABS */
+.fw-panel-tabs {
+  display: flex;
+  gap: 32px;
+  border-bottom: 2px solid #f5f5f5;
+  margin-bottom: 24px;
+}
+
+.fw-panel-tab {
+  padding: 12px 0;
+  background: none;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.2s;
+  font-family: inherit;
+}
+
+.fw-panel-tab:hover {
+  color: #000;
+}
+
+.fw-panel-tab.active {
+  color: #000;
+}
+
+.fw-panel-tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #000;
+}
+
+/* LAYOUT CONTENT */
+.fw-layout-content {
+  padding-top: 8px;
+}
+
+.fw-page-selector {
+  margin-bottom: 24px;
+}
+
+.fw-page-selector .fw-dropdown-btn {
+  width: 100%;
+  justify-content: space-between;
+}
+
+/* SECTIONS LIST */
+.fw-sections-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.fw-section-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.fw-section-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background: #fafafa;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.fw-section-item:hover {
+  background: #f5f5f5;
+  border-color: #d4d4d4;
+}
+
+.fw-section-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.fw-section-info svg {
+  width: 18px;
+  height: 18px;
+  color: #666;
+}
+
+.fw-section-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+}
+
+.fw-section-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.fw-visibility-btn,
+.fw-drag-handle {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.fw-visibility-btn:hover,
+.fw-drag-handle:hover {
+  background: #f5f5f5;
+  border-color: #d4d4d4;
+}
+
+.fw-visibility-btn svg {
+  width: 16px;
+  height: 16px;
+  color: #666;
+}
+
+.fw-drag-handle svg {
+  width: 12px;
+  height: 12px;
+  color: #999;
+}
+
+.fw-drag-handle:hover {
+  cursor: grab;
+}
+
+.fw-drag-handle:active {
+  cursor: grabbing;
+}
+
+/* ADD SECTION BUTTON */
+.fw-add-section-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 16px;
+  background: white;
+  border: 1px dashed #d4d4d4;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.fw-add-section-btn:hover {
+  background: #fafafa;
+  border-color: #a3a3a3;
+  color: #000;
+}
+
+.fw-add-section-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* TAB PLACEHOLDER */
+.fw-tab-placeholder {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.fw-tab-placeholder p {
+  font-size: 14px;
+  color: #999;
+  margin: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .fw-header-left {
+    gap: 12px;
+  }
+
+  .fw-page-dropdown {
+    display: none;
+  }
+
+  .fw-page-dropdown-mobile {
+    display: block;
+  }
+
+  .fw-design-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+
+  .fw-toolbar-left,
+  .fw-toolbar-right {
+    justify-content: space-between;
+  }
+
+  .fw-preview-area {
+    padding: 20px;
+  }
+
+  .fw-preview-frame.desktop {
+    width: 100%;
+    height: 400px;
+  }
+
+  .fw-preview-frame.mobile {
+    width: 100%;
+    max-width: 375px;
+    height: 500px;
+  }
+
+  .fw-panel-content {
+    padding: 0 16px 16px;
+    max-height: 300px;
+  }
+}

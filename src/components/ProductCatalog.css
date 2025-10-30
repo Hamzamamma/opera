@@ -1,0 +1,120 @@
+/* ============================================
+   PRODUCT CATALOG SECTION
+   ============================================ */
+.catalog-section {
+  padding: 60px 0;
+  background: #FAFAFA;
+}
+
+.catalog-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* ============================================
+   CATALOG GRID
+   ============================================ */
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.catalog-card {
+  position: relative;
+  aspect-ratio: 1;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.catalog-card--wide {
+  grid-column: span 2;
+}
+
+.catalog-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.catalog-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.catalog-card__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 100%);
+}
+
+.catalog-card__title {
+  color: #1F2937;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.catalog-loading {
+  text-align: center;
+  padding: 80px 0;
+  font-size: 1.25rem;
+  color: #6B7280;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 1200px) {
+  .catalog-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .catalog-card--wide {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .catalog-section {
+    padding: 60px 0;
+  }
+
+  .catalog-container {
+    padding: 0 20px;
+  }
+
+  .catalog-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .catalog-card--wide {
+    grid-column: span 2;
+  }
+
+  .catalog-card__title {
+    font-size: 1.25rem;
+  }
+
+  .catalog-card__overlay {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .catalog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .catalog-card--wide {
+    grid-column: span 1;
+  }
+}
