@@ -1,0 +1,327 @@
+@import './Dashboard.css';
+
+.fw-memberships-page {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background: #fff;
+}
+
+.fw-memberships-main {
+  margin-left: var(--sidebar-width);
+  flex: 1;
+  padding: var(--spacing-2xl) var(--spacing-2xl);
+  max-width: 1200px;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.fw-memberships-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, #000 0%, #333 100%);
+  border-radius: 12px;
+  margin-bottom: 3rem;
+  color: white;
+}
+
+.fw-hero-content {
+  flex: 1;
+}
+
+.fw-hero-content h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.fw-hero-content p {
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.fw-hero-content a {
+  color: white;
+  text-decoration: underline;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+.fw-hero-content a:hover {
+  opacity: 0.8;
+}
+
+.fw-hero-icon {
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  backdrop-filter: blur(10px);
+}
+
+.fw-hero-icon svg {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+/* Steps Section */
+.fw-steps-section {
+  margin-bottom: 3rem;
+}
+
+.fw-steps-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.fw-step-item {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  transition: opacity 0.2s;
+}
+
+.fw-step-item.fw-step-disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.fw-step-number-container {
+  flex-shrink: 0;
+  padding-top: 0.25rem;
+}
+
+.fw-step-number {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.125rem;
+  background: #f5f5f5;
+  color: #666;
+  transition: all 0.2s;
+}
+
+.fw-step-number.fw-step-active {
+  background: #000;
+  color: white;
+}
+
+.fw-step-number.fw-step-completed {
+  background: #10b981;
+  color: white;
+}
+
+.fw-step-content {
+  flex: 1;
+  background: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+.fw-step-content:hover {
+  border-color: #d4d4d4;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.fw-step-header {
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.fw-step-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0;
+  color: #000;
+}
+
+.fw-step-toggle {
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  transition: all 0.2s;
+}
+
+.fw-step-toggle:hover {
+  color: #000;
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+
+.fw-step-details {
+  padding: 0 1.5rem 1.5rem;
+  border-top: 1px solid #f5f5f5;
+  animation: slideDown 0.2s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fw-step-description {
+  font-size: 0.9375rem;
+  color: #666;
+  line-height: 1.6;
+  margin: 1rem 0 1.5rem;
+}
+
+/* Guides Section */
+.fw-guides-section {
+  margin-bottom: 3rem;
+}
+
+.fw-guides-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 1.25rem 0;
+  color: #000;
+}
+
+.fw-guides-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.fw-guide-item {
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+
+.fw-guide-item:hover {
+  border-color: #d4d4d4;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.fw-guide-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 1.5rem;
+  text-decoration: none;
+  color: #000;
+  gap: 1rem;
+}
+
+.fw-guide-text {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  flex: 1;
+}
+
+.fw-guide-link svg {
+  flex-shrink: 0;
+  opacity: 0.5;
+  transition: all 0.2s;
+}
+
+.fw-guide-link:hover svg {
+  opacity: 1;
+  transform: translateX(2px);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .fw-memberships-main {
+    padding: 1.5rem 1.5rem 6rem;
+  }
+
+  .fw-memberships-hero {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem 1.5rem;
+  }
+
+  .fw-hero-icon {
+    align-self: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .fw-memberships-main {
+    margin-left: 0;
+    padding: 1rem 1rem 6rem;
+  }
+
+  .fw-memberships-hero {
+    padding: 1.5rem 1rem;
+  }
+
+  .fw-hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .fw-hero-content p {
+    font-size: 0.9375rem;
+  }
+
+  .fw-step-item {
+    gap: 1rem;
+  }
+
+  .fw-step-number {
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+  }
+
+  .fw-step-header {
+    padding: 1rem;
+  }
+
+  .fw-step-title {
+    font-size: 1rem;
+  }
+
+  .fw-step-details {
+    padding: 0 1rem 1rem;
+  }
+
+  .fw-guide-link {
+    padding: 1rem;
+  }
+
+  .fw-guide-text {
+    font-size: 0.875rem;
+  }
+}

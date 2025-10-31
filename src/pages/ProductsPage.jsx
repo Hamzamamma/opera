@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import Sidebar from '../components/Sidebar';
 import './ProductsPage.css';
 
 const ProductsPage = () => {
@@ -80,29 +80,7 @@ const ProductsPage = () => {
   return (
     <div className="fw-products-page">
       {/* Sidebar */}
-      <aside className="fw-sidebar">
-        <div className="fw-sidebar__header">
-          <div className="fw-sidebar__logo">fw</div>
-          <div className="fw-sidebar__email">hamzalemzaroual7@gmail.com</div>
-          <button className="fw-sidebar__badge">
-            Coming soon
-            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-        </div>
-        <nav className="fw-sidebar__nav">
-          <Link to="/" className="fw-nav-link">Home</Link>
-          <Link to="/orders" className="fw-nav-link">Orders</Link>
-          <Link to="/products" className="fw-nav-link active">Products</Link>
-          <Link to="/promotions" className="fw-nav-link">Promotions</Link>
-          <Link to="#" className="fw-nav-link">Memberships</Link>
-          <Link to="/site-design" className="fw-nav-link">Site design</Link>
-          <Link to="/analytics" className="fw-nav-link">Analytics</Link>
-          <Link to="/apps" className="fw-nav-link">Apps</Link>
-          <Link to="#" className="fw-nav-link">Settings</Link>
-        </nav>
-      </aside>
+      <Sidebar />
 
       {/* Main Content */}
       <main className="fw-products-main">

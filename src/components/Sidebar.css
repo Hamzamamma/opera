@@ -1,0 +1,232 @@
+/* Sidebar Container */
+.fw-sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: var(--sidebar-width, 250px);
+  background: #fafafa;
+  border-right: 1px solid #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  transition: width 0.3s ease;
+}
+
+.fw-sidebar.collapsed {
+  width: 70px;
+}
+
+/* Sidebar Header */
+.fw-sidebar__header {
+  padding: 1.5rem 1rem;
+  border-bottom: 1px solid #e5e5e5;
+  background: white;
+  transition: padding 0.3s ease;
+}
+
+.fw-sidebar.collapsed .fw-sidebar__header {
+  padding: 1rem 0.5rem;
+}
+
+.fw-sidebar__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.fw-sidebar.collapsed .fw-sidebar__top {
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 0;
+}
+
+.fw-sidebar__logo {
+  width: 40px;
+  height: 40px;
+  background: #000;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1.125rem;
+  transition: all 0.3s ease;
+}
+
+.fw-sidebar.collapsed .fw-sidebar__logo {
+  width: 36px;
+  height: 36px;
+  font-size: 1rem;
+}
+
+.fw-sidebar__toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #666;
+  transition: all 0.2s;
+}
+
+.fw-sidebar__toggle:hover {
+  background: #f5f5f5;
+  color: #000;
+}
+
+.fw-sidebar__toggle svg {
+  width: 18px;
+  height: 18px;
+}
+
+.fw-sidebar.collapsed .fw-sidebar__toggle {
+  transform: rotate(180deg);
+}
+
+.fw-sidebar__email {
+  font-size: 0.875rem;
+  color: #000;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  word-break: break-word;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: opacity 0.2s;
+}
+
+.fw-sidebar.collapsed .fw-sidebar__email {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.fw-sidebar__badge {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  background: #fef3c7;
+  border: 1px solid #fde68a;
+  border-radius: 6px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: #92400e;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.fw-sidebar.collapsed .fw-sidebar__badge {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.fw-sidebar__badge:hover {
+  background: #fde68a;
+}
+
+.fw-sidebar__badge svg {
+  width: 14px;
+  height: 14px;
+  margin-left: 0.25rem;
+}
+
+/* Sidebar Navigation */
+.fw-sidebar__nav {
+  flex: 1;
+  padding: 1rem 0.5rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.fw-nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 0.625rem 0.75rem;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #666;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 1.4;
+  transition: all 0.15s ease;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.fw-sidebar.collapsed .fw-nav-link {
+  justify-content: center;
+  padding: 0.625rem;
+}
+
+.fw-sidebar.collapsed .fw-nav-link span {
+  display: none;
+}
+
+.fw-nav-link:hover {
+  background: #f5f5f5;
+  color: #000;
+}
+
+.fw-nav-link.active {
+  background: #e5e5e5;
+  color: #000;
+}
+
+/* Navigation Icons */
+.fw-nav-icon {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
+  flex-shrink: 0;
+  stroke-width: 2;
+  transition: transform 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fw-nav-link:hover .fw-nav-icon {
+  transform: scale(1.1);
+}
+
+.fw-nav-link.active .fw-nav-icon {
+  stroke-width: 2.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .fw-sidebar {
+    display: none;
+  }
+}
+
+/* Scrollbar Styling */
+.fw-sidebar__nav::-webkit-scrollbar {
+  width: 4px;
+}
+
+.fw-sidebar__nav::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.fw-sidebar__nav::-webkit-scrollbar-thumb {
+  background: #d4d4d4;
+  border-radius: 4px;
+}
+
+.fw-sidebar__nav::-webkit-scrollbar-thumb:hover {
+  background: #a3a3a3;
+}

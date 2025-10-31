@@ -99,18 +99,19 @@
 
 /* Testimonial Card */
 .youtube-testimonial-card {
-  background: rgba(255, 255, 255, 0.95);
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background: rgba(139, 0, 0, 0.85);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
   min-height: 140px;
+  backdrop-filter: blur(10px);
 }
 
 .youtube-testimonial-card:hover {
   transform: scale(1.02);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-  background: #FFFFFF;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  background: rgba(139, 0, 0, 0.95);
 }
 
 .testimonial-header {
@@ -142,12 +143,12 @@
 .testimonial-name {
   font-weight: 600;
   font-size: 0.95rem;
-  color: #1A1A1A;
+  color: #FFFFFF;
 }
 
 .testimonial-handle {
   font-size: 0.85rem;
-  color: #666;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .twitter-icon {
@@ -160,13 +161,13 @@
 }
 
 .twitter-icon svg path {
-  fill: #1DA1F2;
+  fill: #FFFFFF;
 }
 
 .testimonial-quote {
   font-size: 0.9rem;
-  line-height: 1.5;
-  color: #333;
+  line-height: 1.6;
+  color: #FFFFFF;
   margin: 0;
   text-align: left;
 }

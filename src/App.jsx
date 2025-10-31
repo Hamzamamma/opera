@@ -6,12 +6,14 @@ import AppsPage from './pages/AppsPage';
 import PromotionsPage from './pages/PromotionsPage';
 import AnalyticsPage from './pages/AnalyticsPage';
 import ProductsPage from './pages/ProductsPage';
+import MembershipsPage from './pages/MembershipsPage';
 import MyProductsPage from './pages/MyProductsPage';
 import PrintfulDashboard from './pages/PrintfulDashboard';
 import PrintfulCatalog from './pages/PrintfulCatalog';
 import PrintfulProducts from './pages/PrintfulProducts';
 import PrintfulOrders from './pages/PrintfulOrders';
 import LandingPage from './pages/LandingPage';
+import CatalogPage from './pages/CatalogPage';
 import './App.css';
 
 function AppContent() {
@@ -20,6 +22,7 @@ function AppContent() {
       <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/landing" element={<LandingPage />} />
+        <Route path="/catalog" element={<CatalogPage />} />
         <Route path="/orders" element={<OrdersPage />} />
         <Route path="/site-design" element={<SiteDesignPage />} />
         <Route path="/apps" element={<AppsPage />} />
@@ -28,6 +31,7 @@ function AppContent() {
         <Route path="/promotions/giveaway-links" element={<PromotionsPage />} />
         <Route path="/analytics" element={<AnalyticsPage />} />
         <Route path="/products" element={<ProductsPage />} />
+        <Route path="/memberships" element={<MembershipsPage />} />
         <Route path="/myproducts" element={<MyProductsPage />} />
         <Route path="/printful" element={<PrintfulDashboard />} />
         <Route path="/printful/catalog" element={<PrintfulCatalog />} />

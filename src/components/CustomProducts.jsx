@@ -47,10 +47,10 @@ const CustomProducts = () => {
           <div className="why-grid">
             {/* Card 1: Set up in minutes */}
             <article className="why-card">
+              <h3 className="why-card-title">Configura in pochi minuti</h3>
               <div className="why-icon-wrapper">
                 <img src={whyQuality} alt="Configura in pochi minuti" className="why-card-image" />
               </div>
-              <h3 className="why-card-title">Configura in pochi minuti</h3>
               <p className="why-card-desc">
                 Usa il builder senza codice per creare una vetrina brandizzata e prodotti che riflettono la tua azienda.
               </p>
@@ -58,10 +58,10 @@ const CustomProducts = () => {
 
             {/* Card 2: Sell or send with one link */}
             <article className="why-card">
+              <h3 className="why-card-title">Vendi o invia con un link</h3>
               <div className="why-icon-wrapper">
                 <img src={whyBrandControl} alt="Vendi o invia con un link" className="why-card-image" />
               </div>
-              <h3 className="why-card-title">Vendi o invia con un link</h3>
               <p className="why-card-desc">
                 Spedisci merchandise aziendale direttamente ai dipendenti o rendi il tuo negozio pubblico per clienti, fan e partner.
               </p>
@@ -69,10 +69,10 @@ const CustomProducts = () => {
 
             {/* Card 3: No inventory required */}
             <article className="why-card">
+              <h3 className="why-card-title">Nessun inventario richiesto</h3>
               <div className="why-icon-wrapper">
                 <img src={whyShipping} alt="Nessun inventario richiesto" className="why-card-image" />
               </div>
-              <h3 className="why-card-title">Nessun inventario richiesto</h3>
               <p className="why-card-desc">
                 Che sia print on demand o drop shipping personalizzato, gestiamo produzione, stoccaggio, imballaggio e spedizione — così tu non devi farlo.
               </p>
@@ -80,10 +80,10 @@ const CustomProducts = () => {
 
             {/* Card 4: For teams and customers */}
             <article className="why-card">
+              <h3 className="why-card-title">Per team <span className="why-highlight">e</span> clienti</h3>
               <div className="why-icon-wrapper">
                 <img src={whyUseCases} alt="Per team e clienti" className="why-card-image" />
               </div>
-              <h3 className="why-card-title">Per team <span className="why-highlight">e</span> clienti</h3>
               <p className="why-card-desc">
                 Perfetto per regali di benvenuto, premi interni, merchandise per eventi, kit per influencer o qualsiasi altra cosa ti serva.
               </p>

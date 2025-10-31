@@ -4,7 +4,6 @@ import YouTubeSteps from '../components/YouTubeSteps';
 import CustomProducts from '../components/CustomProducts';
 import FeaturesSection from '../components/FeaturesSection';
 import YouTubeHero from '../components/YouTubeHero';
-import EasyEcommerce from '../components/EasyEcommerce';
 import Testimonial from '../components/Testimonial';
 import FAQ from '../components/FAQ';
 
@@ -17,7 +16,6 @@ const LandingPage = () => {
       <YouTubeSteps />
       <CustomProducts />
       <YouTubeHero />
-      <EasyEcommerce />
       <Testimonial />
       <FAQ />
     </div>
